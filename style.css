@@ -4,22 +4,22 @@ div {
     border: 2px solid black;
 }
 
-.red {
+div.red {
     background-color: red;
 }
 
-.blue {
+div.blue {
     background-color: blue;
 }
 
-.green {
+div.green {
     background-color: green;
 }
 
-.grey {
+div.grey {
     background-color: grey;
 }
 
-.yellow {
+div.yellow {
     background-color: yellow;
 }

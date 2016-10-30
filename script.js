@@ -1,11 +1,12 @@
 jQuery(function ($){
-    $('div').click(function(event){
-        var pdiv = $(this).parent('li');
-        pdiv.insertChildBefore(pdiv.prev)
-        //console.log($('div').attr('class'))
-        // console.log(event.target.getAttribute('class'))
-        // console.log($(this));
-        // var obj = event.target;
-        // console.log(obj.getAttribute('class'))
+    $('button.up').click(function(event){
+        var parentElem = $(this).parent().parent();
+        parentElem.insertBefore(parentElem.prev());
+        return false
+    });
+    $('button.down').click(function(event){
+        var parentElem = $(this).parent().parent();
+        parentElem.insertAfter(parentElem.next());
+        return false
     });
 } );
